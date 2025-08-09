@@ -28,12 +28,15 @@
 
 <style>
     body {
-         margin: 0;
-        height: 100vh; /* ocupa toda la pantalla */
+        margin: 0;
+    padding: 20px; /* margen interno que siempre se mantiene */
+    width: 450px;
+    height: 100vh;
+    background-color: #d8e2dc;
     display: flex;
     justify-content: center; /* centra horizontalmente */
     align-items: center;     /* centra verticalmente */
-    font-family: 'Roboto', serif;
+    box-sizing: border-box; /* para que el padding no rompa el tamaño */
     }
     .presentacion{
         display: flex;
