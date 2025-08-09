@@ -30,10 +30,9 @@
             </div>
         </div>
     </div>
-    <p>
-        "Holaaaa esta pagina es para guardar cosas randoms, es la cuarta pagina
-        que hago para esto, aunque esta es probable que esta sea la definitiva
-        :D"
+    <div class="aviso" style="display: flex; margin-top: 15px; margin-bottom: 15px; justify-content: center; align-items: center;">
+        <p style="text-align: start; width: 350px; margin-right: 10px;">
+       Esta es mi cuarta página para guardar cosas random y probablemente la definitiva. Está hecha con Astro, mi framework favorito, aún en proceso y sin recopilar datos, así que puedes usarla y revisarla con total confianza. 
     </p>
     <div class="links">
         <a href="https://www.instagram.com/cerrpuffs" class="link"
@@ -42,8 +41,9 @@
         <a href="" class="link"><i class="fa-brands fa-itch-io"></i></a>
         <a href="" class="link"><i class="fa-brands fa-github"></i></a>
     </div>
+    </div>
     <div class="imagenes">
-        <h1>Fotos Destacadas</h1>
+        <h1 style="font-size: 35px;">Fotos Destacadas</h1>
         <div class="imgs">
             <img src="/fts/IMG_20250801_163619.jpg" alt="" />
             <img src="/fts/SAM_0569.JPG" alt="" />
@@ -57,9 +57,7 @@
         </p>
     </div>
     <p style="font-size: 12px; color: gray;">
-        Esta pagina fue hecha con Astro, mi framework favorito. Esta pagina esta
-        en proceso. Esta pagina no recopila informacion de ningun tipo, sientete
-        seguro de usarla y revisarla cuando quieras.
+        
     </p>
 </section>
 
@@ -131,6 +129,7 @@
 
     .links {
         gap: 15px;
+        
     }
 
     .links i {
@@ -138,7 +137,7 @@
     }
 
     .link {
-        display: inline-block;
+        display: grid;
         padding: 10px;
         border-radius: 10px;
         font-size: 15px;
@@ -148,6 +147,7 @@
         text-decoration: none;
         font-family: "Ubuntu", sans-serif;
         transition: all 0.2s ease-in-out;
+        margin-bottom: 5px;
     }
 
     .link:hover {
