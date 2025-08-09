@@ -1,101 +1,153 @@
 ---
+
 ---
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lilita+One&family=Lobster&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+    href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&family=Lilita+One&display=swap"
+    rel="stylesheet"
+/>
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+/>
 
 <section class="container">
     <div class="intro">
         <div class="presentacion">
-            <img src="https://i.pinimg.com/736x/55/21/2b/55212b7ee5a9594479c702ac01e5e617.jpg" alt="foto de alguien que se parece a mi xd" class="img">
+            <img
+                src="https://i.pinimg.com/736x/55/21/2b/55212b7ee5a9594479c702ac01e5e617.jpg"
+                alt="foto de alguien que se parece a mi xd"
+                class="img"
+            />
             <div class="letras">
                 <h1>Cerrpuffs</h1>
-                <h3 style="font-weight:normal;">💻 Desarrollador en progreso · 🎮 Creador de videojuegos · 🎨 Amante del pixel art · 🎧 Explorador musical</h3>
-
+                <h3 style="font-weight:normal;">
+                    💻 Desarrollador en proceso · 🎮 Creador de videojuegos ·
+                    🎨 Amante del pixel art · 🎧 Explorador musical
+                </h3>
             </div>
         </div>
     </div>
-    <p>"Holaaaa esta pagina es para guardar cosas randoms, es la cuarta pagina que hago para esto, aunque esta es probable que esta sea la definitiva :D"</p>
+    <p>
+        "Holaaaa esta pagina es para guardar cosas randoms, es la cuarta pagina
+        que hago para esto, aunque esta es probable que esta sea la definitiva
+        :D"
+    </p>
     <div class="links">
-        <a href="https://www.instagram.com/cerrpuffs" class="link"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.instagram.com/cerrpuffs" class="link"
+            ><i class="fa-brands fa-instagram"></i></a
+        >
         <a href="" class="link"><i class="fa-brands fa-itch-io"></i></a>
         <a href="" class="link"><i class="fa-brands fa-github"></i></a>
-
     </div>
-    <p style="font-size: 12px; color: gray;">Esta pagina fue hecha con Astro, mi framework favorito. Esta pagina esta en proceso. Esta pagina no recopila informacion de ningun tipo, sientete seguro de usarla y revisarla cuando quieras. <3</p>
+    <div class="imagenes">
+        <h1>Fotos Destacadas</h1>
+        <div class="imgs">
+            <img src="public/fts/IMG_20250801_163619.jpg" alt="" />
+            <img src="public/fts/SAM_0569.JPG" alt="" />
+            <img src="public/fts/SAM_0593.JPG" alt="" />
+            <img src="public/fts/SAM_0615.JPG" alt="" />
+            <img src="public/fts/SAM_0609.JPG" alt="" />
+        </div>
+        <p style="font-size: 12px; color: gray;">
+            Estas fotos fueron tomadas por una camarita sony antigua, si entrara
+            a tomarle fotos a una tienda de antiguedades, salgo sin camara
+        </p>
+    </div>
+    <p style="font-size: 12px; color: gray;">
+        Esta pagina fue hecha con Astro, mi framework favorito. Esta pagina esta
+        en proceso. Esta pagina no recopila informacion de ningun tipo, sientete
+        seguro de usarla y revisarla cuando quieras. 
+    </p>
 </section>
 
 <style>
+    /* Ajuste general del layout */
     body {
-    padding: 20px; /* margen interno que siempre se mantiene */
-    width: 100%;
-    height: 100vh;
-    background-color: #d8e2dc;
-    display: flex;
-    justify-content: center; /* centra horizontalmente */
-    align-items: center;     /* centra verticalmente */
-    box-sizing: border-box; /* para que el padding no rompa el tamaño */
-    }
-    .presentacion{
+        margin: 0;
+        padding: 20px;
+        width: 100%;
+        min-height: 100vh; /* ahora crece si hay más contenido */
+        background-color: #d8e2dc;
         display: flex;
         justify-content: center;
-        align-items: center;
-        gap: 15px;
-        border-radius: 15px;
-        h3{
-            margin-top: -35px;
-        }
+        align-items: flex-start; /* empieza desde arriba */
+        box-sizing: border-box;
+        overflow-y: auto; /* permite scroll vertical si es necesario */
     }
+
     .container {
-        width: 450px;
+        max-width: 450px;
         background-color: #fff;
         padding: 20px;
         border-radius: 10px;
         border: 4px solid #000;
         color: #000;
         box-shadow: 0 5px 0 #000;
-        display: grid;
-        justify-content: center;
-        align-items: center;
         text-align: center;
-        margin: 20px;
-    }
-    .links{
-        gap: 15px;
-        i{
-            font-size: 35px;
-        }
-    }
-    .link {
-    margin-bottom: 10px;
-    display: inline-block;
-    padding: 10px 10px;
-    border-radius: 10px;
-    font-size: 15px;
-    border: 4px solid #000;
-    background-color: #f9f9f9;
-    color: #000;
-    text-decoration: none;
-    font-family: 'Ubuntu', sans-serif;
-    transition: all 0.2s ease-in-out;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    h3{
-        margin-top: -25px;
-    }
-    h1{
-        font-size: 25px;
-    }
-}
-    .intro{
-        border: 5px solid black;
-        padding: 15px;
-        border-radius: 5px;
-        margin-bottom: 15px;
     }
 
+    /* Scroll horizontal para imágenes */
+    .imgs {
+        display: flex;
+        gap: 10px;
+        overflow-x: auto;
+        padding-bottom: 10px;
+        scroll-snap-type: x mandatory;
+    }
+
+    .imgs img {
+        width: 345px;
+        height: 250px;
+        flex-shrink: 0;
+        padding: 5px;
+        border: 5px solid black;
+        scroll-snap-align: start;
+    }
+
+    /* Ocultar scrollbar */
+    .imgs::-webkit-scrollbar {
+        display: none;
+    }
+    .imgs {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .presentacion {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        border-radius: 15px;
+    }
+
+    .presentacion h3 {
+        margin-top: -35px;
+    }
+
+    .links {
+        gap: 15px;
+    }
+
+    .links i {
+        font-size: 25px;
+    }
+
+    .link {
+        display: inline-block;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 15px;
+        border: 4px solid #000;
+        background-color: #f9f9f9;
+        color: #000;
+        text-decoration: none;
+        font-family: "Ubuntu", sans-serif;
+        transition: all 0.2s ease-in-out;
+    }
 
     .link:hover {
         box-shadow: 0 5px 0 #000;
@@ -103,30 +155,25 @@
         cursor: pointer;
         background-color: #fff;
     }
-    .link:active{
-        transform: translateY(5px)
-        box-shadow: 0 0px 0 #000;
-    }
 
     .img {
         width: 150px;
         border-radius: 10%;
-        border: 5px;
-        justify-content: center;
-        align-items: center;
         border: 5px solid black;
     }
+
     h1 {
         font-size: 45px;
-        font-family: 'Lilita One', Courier, monospace;
+        font-family: "Lilita One", Courier, monospace;
     }
+
     h3 {
         font-size: 15px;
-        font-family: 'Kanit', Courier, monospace;
+        font-family: "Kanit", Courier, monospace;
     }
-    p{
-        font-family: 'Kanit', sans-serif;
+
+    p {
+        font-family: "Kanit", sans-serif;
         text-align: center;
     }
-    bold
 </style>
