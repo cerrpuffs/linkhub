@@ -2,12 +2,9 @@
 
 ---
 
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-    href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&family=Lilita+One&display=swap"
-    rel="stylesheet"
-/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lilita+One&family=Lobster&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -24,32 +21,33 @@
             <div class="letras">
                 <h1>Cerrpuffs</h1>
                 <h3 style="font-weight:normal;">
-                    💻 Desarrollador en proceso · 🎮 Creador de videojuegos · 🎨
-                    Amante del pixel art · 🎧 Explorador musical
+                    Desarrollador en proceso  -  Creador de videojuegos  - 
+                    Amante del pixel art  - Explorador musical
                 </h3>
             </div>
         </div>
     </div>
     <div class="aviso" style="display: flex; margin-top: 15px; margin-bottom: 15px; justify-content: center; align-items: center;">
-        <p style="text-align: start; width: 350px; margin-right: 10px;">
-       Esta es mi cuarta página para guardar cosas random y probablemente la definitiva. Está hecha con Astro, mi framework favorito, aún en proceso y sin recopilar datos, así que puedes usarla y revisarla con total confianza. 
+        <p style="text-align: center; width: 350px; margin-right: 10px; font-family: "Ubuntu";">
+       "Esta es mi cuarta pagina para guardar cosas random y probablemente la definitiva. Esta hecha con Astro, mi framework favorito, aun en proceso y sin recopilar datos, asi que puedes usarla y revisarla con total confianza. Una pagina sencilla y simple pero hecha con mucho esfuerzo."
     </p>
+    <p style="font-size: 15px; color: gray;">
+            Algunos links a otras plataformas.
+        </p>
     <div class="links">
         <a href="https://www.instagram.com/cerrpuffs" class="link"
-            ><i class="fa-brands fa-instagram"></i></a
+        ><i class="fa-brands fa-instagram"></i></a
         >
         <a href="" class="link"><i class="fa-brands fa-itch-io"></i></a>
         <a href="" class="link"><i class="fa-brands fa-github"></i></a>
+        <a href="https://open.spotify.com/playlist/2lPtJzWs60uXiIGYWyEBYO?si=XcZSBrNJTjG5ANCM2m0X7Q" class="link"><i class="fa-brands fa-spotify"></i></a>
     </div>
-    </div>
+</div>
     <div class="imagenes">
-        <h1 style="font-size: 35px;">Video Random</h1>
+        <h1>Una playlist creada por mi!!!</h1>
         <div class="imgs">
-             <iframe width="560" height="315" src="https://www.youtube.com/embed/yDzgiGdekas?si=0x-gbTwNlORdS10z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+             <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2lPtJzWs60uXiIGYWyEBYO?utm_source=generator&theme=0" width="100%" height="552px" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div>
-        <p style="font-size: 12px; color: gray;">
-            Este trailer es simplemente hermoso
-        </p>
     </div>
     <p style="font-size: 12px; color: gray;">
         
@@ -57,32 +55,107 @@
 </section>
 
 <style>
-    /* Ajuste general del layout */
     body {
         margin: 0;
         padding: 20px;
-        width: 100%;
-        min-height: 100vh; /* ahora crece si hay más contenido */
         background-color: #d8e2dc;
         display: flex;
         justify-content: center;
-        align-items: flex-start; /* empieza desde arriba */
+        align-items: flex-start;
+        min-height: 100vh;
         box-sizing: border-box;
-        overflow-y: auto; /* permite scroll vertical si es necesario */
     }
 
     .container {
-        max-width: 350px;
+        width: 450px;
+        max-width: 800px;
         background-color: #fff;
         padding: 20px;
         border-radius: 10px;
         border: 4px solid #000;
-        color: #000;
         box-shadow: 0 5px 0 #000;
         text-align: center;
     }
 
-    /* Scroll horizontal para imágenes */
+    /* Presentación */
+    .presentacion {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        text-align: left;
+    }
+
+    .presentacion img {
+        width: 150px;
+        border-radius: 10%;
+        border: 5px solid black;
+    }
+
+    .letras h1 {
+        font-size: clamp(48px, 4vw, 45px);
+        font-family: "Lilita One", Courier, monospace;
+        margin: 0;
+    }
+
+    .letras h3 {
+        font-size: clamp(14px, 2vw, 18px);
+        font-family: "Kanit", Courier, monospace;
+        font-weight: normal;
+        margin-top: 5px;
+    }
+
+    /* Aviso */
+    .aviso {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    .aviso p {
+        max-width: 400px;
+        text-align: justify;
+        font-family: "Kanit", sans-serif;
+    }
+
+    /* Links */
+    .links {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .link {
+        display: grid;
+        place-items: center;
+        padding: 8px;
+        border-radius: 10px;
+        border: 4px solid #000;
+        background-color: #f9f9f9;
+        font-size: 25px;
+        color: #000;
+        text-decoration: none;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .link:hover {
+        box-shadow: 0 5px 0 #000;
+        transform: translateY(-5px);
+        background-color: #fff;
+    }
+    .imagenes h1{
+        font-size: 20px;
+        font-family: 'Ubuntu';
+    }
+    /* Video e imágenes */
+    .imagenes {
+        margin-top: 20px;
+    }
+
     .imgs {
         display: flex;
         gap: 10px;
@@ -91,83 +164,33 @@
         scroll-snap-type: x mandatory;
     }
 
+    .imgs iframe {
+        flex: 0 0 auto;
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 16/9;
+        border: none;
+    }
+
     .imgs img {
-    width: 250px;
-    height: auto; /* Altura automática según proporción */
-    border: 5px solid black;
-    border-radius: 15px;
-}
-
-
-    /* Ocultar scrollbar */
-    .imgs::-webkit-scrollbar {
-        display: none;
-    }
-    .imgs {
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-    }
-
-    .presentacion {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 15px;
+        width: 250px;
+        height: auto;
+        border: 5px solid black;
         border-radius: 15px;
     }
 
-    .presentacion h3 {
-        margin-top: -35px;
+    .imgs::-webkit-scrollbar {
+        display: none;
     }
 
-    .links {
-        gap: 15px;
-        
-    }
-
-    .links i {
-        font-size: 25px;
-    }
-
-    .link {
-        display: grid;
-        padding: 5px;
-        border-radius: 10px;
-        font-size: 15px;
-        border: 4px solid #000;
-        background-color: #f9f9f9;
-        color: #000;
-        text-decoration: none;
-        font-family: "Ubuntu", sans-serif;
-        transition: all 0.2s ease-in-out;
-        margin-bottom: 5px;
-    }
-
-    .link:hover {
-        box-shadow: 0 5px 0 #000;
-        transform: translateY(-5px);
-        cursor: pointer;
-        background-color: #fff;
-    }
-
-    .img {
-        width: 150px;
-        border-radius: 10%;
-        border: 5px solid black;
-    }
-
-    h1 {
-        font-size: 45px;
-        font-family: "Lilita One", Courier, monospace;
-    }
-
-    h3 {
-        font-size: 15px;
-        font-family: "Kanit", Courier, monospace;
-    }
-
-    p {
-        font-family: "Kanit", sans-serif;
-        text-align: center;
+    /* Responsive */
+    @media (max-width: 600px) {
+        .presentacion {
+            flex-direction: column;
+            text-align: center;
+        }
+        .aviso {
+            flex-direction: column;
+        }
     }
 </style>
