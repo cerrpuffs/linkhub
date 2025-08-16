@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://link.bydaniel.site/sitemap.xml
